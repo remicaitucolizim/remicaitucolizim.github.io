@@ -4,11 +4,6 @@
   gap: 14px;
 }
 
-.section-head--skills {
-  justify-content: flex-start;
-  gap: 12px;
-}
-
 .skill {
   position: relative;
   overflow: hidden;
@@ -95,7 +90,6 @@
 
 .skill-head {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   margin-bottom: 6px;

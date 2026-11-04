@@ -1,5 +1,4 @@
 .terminal {
-  position: relative;
   overflow: hidden;
   min-width: 245px;
   padding: 0 18px 14px;
@@ -40,8 +39,6 @@
   }
 
   &__details {
-    position: relative;
-    z-index: 1;
     padding-bottom: 2px;
   }
 
@@ -70,7 +67,6 @@
   b {
     color: var(--green);
   }
-
 }
 
 .drawing-ink,
