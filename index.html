@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Rémi Caitucoli Zimmermann — ~/CV</title>
 <meta name="description" content="CV de Rémi Caitucoli Zimmermann, lycéen passionné par l'informatique, l'ingénierie et les projets techniques.">
-<link rel="preload" href="AtkinsonHyperlegible-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/atkinson-hyperlegible-minimal-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.min.css">
 </head>
 <body>
@@ -329,6 +329,14 @@ localStorage.setItem("theme",t);
 
 theme(saved||"night");
 btn.onclick=()=>theme(root.dataset.theme==="night"?"light":"night");
+
+window.addEventListener("load",()=>{
+document.fonts.load('400 18px "Atkinson Hyperlegible Full"')
+.then(fonts=>{
+if(fonts.length)root.classList.add("font-full");
+})
+.catch(error=>console.error("Impossible de charger la police complète :",error));
+},{once:true});
 </script>
 
 </body>
