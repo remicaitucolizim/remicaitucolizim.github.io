@@ -39,11 +39,6 @@
     }
   }
 
-  &__status {
-    color: var(--aqua);
-    font-size: 9px;
-  }
-
   &__details {
     position: relative;
     z-index: 1;
@@ -76,27 +71,19 @@
     color: var(--green);
   }
 
-  i {
-    color: var(--blue);
-    font-style: normal;
-  }
 }
 
 .drawing-ink,
 .drawing-accent,
 .drawing-detail,
 .book-lines,
-.book-page,
-.book-ink,
-.book-print,
-.book-gold {
+.book-page {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.drawing-ink,
-.book-ink {
+.drawing-ink {
   stroke: var(--text);
 }
 
@@ -105,18 +92,13 @@
   stroke-width: 2;
 }
 
-.drawing-detail,
-.book-gold {
+.drawing-detail {
   stroke: var(--yellow);
 }
 
 .book-detail {
   stroke: var(--subtle);
   stroke-width: 0.8;
-}
-
-.book-print {
-  stroke: var(--subtle);
 }
 
 .book-page {

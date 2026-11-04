@@ -31,10 +31,6 @@ a {
     color: var(--green-dark);
   }
 
-  &:focus-visible {
-    outline: 2px solid var(--green);
-    outline-offset: 3px;
-  }
 }
 
 .terminal,
