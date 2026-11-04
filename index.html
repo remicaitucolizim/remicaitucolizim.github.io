@@ -327,22 +327,6 @@ localStorage.setItem("theme",t);
 
 theme(saved||"night");
 btn.onclick=()=>theme(root.dataset.theme==="night"?"light":"night");
-
-// animation compétences
-const skills=document.querySelectorAll(".skill");
-if("IntersectionObserver" in window){
-const observer=new IntersectionObserver(entries=>{
-for(const entry of entries){
-if(entry.isIntersecting){
-entry.target.classList.add("skill--visible");
-observer.unobserve(entry.target);
-}
-}
-},{threshold:.25});
-skills.forEach(skill=>observer.observe(skill));
-}else{
-skills.forEach(skill=>skill.classList.add("skill--visible"));
-}
 </script>
 
 </body>
