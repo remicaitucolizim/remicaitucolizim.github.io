@@ -8,7 +8,7 @@ body {
   color: var(--text);
   font: 18px/1.6 var(--sans);
   animation: page-enter 0.55s ease-out both;
-  transition: background-color 0.40s ease, color 0.40s ease;
+  transition: background-color 0.30s ease, color 0.30s ease;
 }
 
 @keyframes page-enter {

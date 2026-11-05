@@ -342,6 +342,7 @@ localStorage.setItem("theme",t);
 theme(saved||"night");
 btn.onclick=()=>theme(root.dataset.theme==="night"?"light":"night");
 
+//chargement police de caractères complète une fois que le site est complêtement chargé
 window.addEventListener("load",()=>{
 const loadFullFont=()=>{
 if(!document.fonts)return;
